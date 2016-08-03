@@ -225,3 +225,9 @@ body {min-height: 100%;}
 	.form_popap .form_item--inp {margin: 0; overflow: hidden;}
 .form_item--h {font-weight: bold;}
 .form_popap .form_item--inp span {display: inline-block; padding-top: 7px;}
+.form_item--width {width: 182px !important; display: inline-block; vertical-align: top;}
+.form_item-comment {font-size: 11px; margin: 20px 0 15px;}
+.popup_btn.pull-left {padding-left: 0; padding-bottom: 15px;}
+.form_popap-row {margin-bottom: 5px;}
+
+

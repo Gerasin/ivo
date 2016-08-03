@@ -7,12 +7,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <meta name="robots" content="index, follow">
-	    <meta name="author" content="Irvine Virtual Office">
-	    <meta name="publisher" content="Irvine Virtual Office">
-	    <meta name="description" content="Создать стопроцентный шаблон HTML5">
-	    <meta name="keywords" content="100%, шаблон, HTML5">
-	    <meta name="generator" content="Core CMS">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Irvine Virtual Office">
+        <meta name="publisher" content="Irvine Virtual Office">
+        <meta name="description" content="Создать стопроцентный шаблон HTML5">
+        <meta name="keywords" content="100%, шаблон, HTML5">
+        <meta name="generator" content="Core CMS">
 
         <link rel="icon" type="image/ico" href="favicon.ico" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,13 +29,13 @@
 
 
         <header class="head">
-        	<div class="container">
-        		<div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="container">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
                 <div class="autorize_info">
                     <div class="autorize_name">Fred Flinstone, Rubber Bands R Us</div>
                     <div class="logout"><a href=""><img src="img/login_bg.png" alt="">login</a></div>
                 </div>
-        	</div>
+            </div>
         </header>
 
         <div class="menu_left menu_stat">
@@ -68,6 +68,7 @@
                 <p><a href="" data-toggle="modal" data-target="#add_user">CPpopup_add_user</a></p>
                 <p><a href="" data-toggle="modal" data-target="#subscribe_complete">CPpopup_confirmation</a></p>
                 <p><a href="" data-toggle="modal" data-target="#update_password">CPpopup_update_password</a></p>
+                <p><a href="" data-toggle="modal" data-target="#service">SUBSCRIBE TO A SERVICE</a></p>
             </div>
             <p>&#160;</p>
         </div>
@@ -213,6 +214,39 @@
                         <input type="submit" class="btn" value="cancel" data-dismiss="modal" aria-hidden="true">
                         <input type="submit" class="btn btn-orange" value="save">
                     </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade modal_orange" id="service" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-h_ico"><img src="img/ico_ivo_w.png" alt=""></div>
+                <div class="modal-h_ver">subscribe to a service</div>
+                <div class="panel-icon"><img src="img/pan_ico_w.png" alt=""></div>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                    <div class="form_item form_popap form_popap-row">
+                        <div class="form_item--h form_item--width">LIVE RECEPTIONIST</div> 
+                        <div class="form_item--inp form_item--width"><span>$150/month</span></div>
+                        <div class="form_item--inp form_item--width"><span>CREDIT/DEBIT CARD</span></div>
+                    </div>
+                    <div class="form_item form_popap form_popap-row">
+                        <div class="form_item--h form_item--width">TOTAL AMOUNT:</div>
+                        <div class="form_item--inp form_item--width"><span>$150</span></div>
+                        <div class="form_item--inp form_item--width"><span>XXXX-XXXX-XXXX-3234 <br> exp. 02/19</span></div>
+                    </div>
+                    <div class="form_item-comment">
+                        A new Invoice will be generated and your <strong>Credit/Debit Card</strong> on file with us will be charged for: <a href="">$150.00</a>
+                    </div>
+                    <div class="popup_btn pull-left"><input type="submit" class="btn btn-orange" value="CONTINUE"></div>
+                    <div class="popup_btn"><input type="submit" class="btn" value="CANCEL"></div>
+                    <div class="clearfix"></div>
                 </form>
               </div>
             </div>
