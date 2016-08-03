@@ -1,0 +1,227 @@
+html {height: 100%;}
+body {min-height: 100%;}
+
+.cp_page {}
+	.cp_page .crubs {margin: 22px 0 34px; padding: 0;}
+.box_info {border: 1px solid #333; position: relative; height: 69px; margin: 0 0 15px 13px; display: inline-block; max-width: 100%;}
+.box_info_100 {width: 100%;}
+	.box_info-ico {position: absolute; left: -14px; top: 17px;}
+	.box_info-ico_bg {background: #fff; padding-top: 5px; padding-bottom: 5px; top: 15px;}
+	.box_info--btn {float: right; padding: 19px 16px 0 28px;}
+	.box_info--txt {overflow: hidden; padding-left: 22px;}
+		.box_info--txt_in {height: 67px; vertical-align: middle; font: normal 400 12px/18px 'Droid Sans'; text-transform: uppercase; display: table-cell;}
+.cancell_service {text-align: center; margin: 14px 0 14px;}
+	.cancell_service a {text-transform: uppercase; color: #ccc; font: normal 400 9px/16px 'Fregat'; text-decoration: underline; letter-spacing: 0.2em;}
+	.cancell_service a:hover {text-decoration: none;}
+
+.panel-min {position: relative; padding: 18px 16px 15px 22px; border-top: 1px solid #ccc;}
+	.panel-min .panel-icon {top: 8px; right: 10px;}
+	.panel-primary.panel-min > .panel-heading {padding: 0 0 14px; background: none; position: initial; color: #333;}
+	.panel-primary.panel-min > .panel-body {padding: 0;}
+	.panel-lnk {font-size: 12px; line-height: 15px; text-transform: uppercase;}
+		.panel-lnk a {color: #333; text-decoration: underline;}
+		.panel-lnk a:hover {text-decoration: none;}
+	.panel-min .helper {top: -1px;}
+	.panel-min .form_btn {margin-bottom: 0;}
+
+.panel-title-min {font: normal 700 15px/16px 'Fregat';}
+	.panel-title-min img {vertical-align: top;}
+.header_img {margin-left: 4px; position: relative; top: -1px;}
+.stat_subscribe {border-color: #ff4e00; color: #ff4e00; padding: 0 12px;}
+.helper {position: absolute; left: 100%; margin-left: 40px; background: #ffd096; width: 300px; padding: 18px 25px 17px 46px; font: normal 400 12px/14px 'Droid Sans';
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;}
+	.helper:before {content: ' '; position: absolute; top: 8px; left: 9px; width: 15px; height: 16px; background: url(../img/pan_ico.png) 0 0 no-repeat;}
+	.helper:after {content: ' '; position: absolute; left: -13px; bottom: 0; width: 36px; height: 25px; background: url(../img/helper_bg.png) 0 0 no-repeat;}
+.form_pass .form_item--h {width: 150px; font-weight: bold;}
+.form_pass .form_item--inp {margin-left: 150px;}
+
+.menu_stat {}
+.menu_left.menu_stat {width: 258px;}
+.menu_left.menu_stat li a {padding: 11px 33px 12px 65px; font-size: 12px; display: block;}
+.menu_left.menu_stat li a span {left: 28px;}
+.container_admin {padding-left: 290px;}
+.balance {border: 1px solid #ff8e00; padding: 11px 7px 10px 8px; margin: 0 30px 0 28px;}
+	.balance_lnk {float: right; font-size: 12px;}
+		.balance_lnk a {color: #ff8e00; text-decoration: underline;}
+		.balance_lnk a:hover {text-decoration: none;}
+	.balance_header {font: normal 700 12px/15px 'Fregat'; text-transform: uppercase; color: #fff; padding-top: 2px; letter-spacing: 0.15em;}
+.tab_lnk {margin: 0 0 11px; border: 1px solid #363941; overflow: hidden; height: 43px; position: relative; cursor: pointer;}
+	.tab_lnk--h {float: left;}
+		.tab_lnk--ico {display: inline-block; width: 40px; text-align: center; padding: 0; position: relative; top: -2px;}
+		.tab_lnk--name {display: inline-block; padding: 15px 0 0; font: normal 700 12px/15px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em;}
+	.tab_lnk--info {float: right; background: #5c616f; height: 34px; padding: 3px 10px 0 59px; position: relative; width: 309px; margin: 3px 40px 0 0; color: #fff; font: normal 400 12px/14px 'Droid Sans'; float: right;
+		-webkit-border-radius: 32px 20px 20px 32px/17px 16px 16px 17px;
+		-moz-border-radius: 32px 20px 20px 32px/17px 16px 16px 17px;
+		border-radius: 32px 20px 20px 32px/17px 16px 16px 17px; }
+	.tab_lnk--i_pad {padding-top: 9px;}
+		.tab_lnk--point {position: absolute; top: 19px; right: 14px; width: 8px; height: 7px; background: url(../img/point.png) 0 0 no-repeat;}
+		.tab_lnk.open .tab_lnk--point {background-position: 0 100%;}
+		.tab_lnk--f_ico {position: absolute; top: 4px; left: 32px;}
+			.tab_lnk--f_ico img {vertical-align: top;}
+	.tab_cont {margin: 0 0 15px;}
+		.tab_cont_close {display: block; border: 1px solid #363941; height: 27px; margin: 5px 0 0; position: relative; cursor: pointer;}
+			.tab_cont_close:before {content: ' '; position: absolute; top: 9px; right: 14px; width: 8px; height: 7px; background: url(../img/point.png) 0 100% no-repeat;}
+	.fc-center h2 {font: normal 700 12px/15px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em; padding-top: 9px;}
+	.fc-day-header {background: #5a6171; color: #fff; text-transform: uppercase; font: normal 700 12px/15px 'Fregat'; padding-top: 3px !important; padding-bottom: 2px !important;}
+	.fc-head {border-bottom: 15px solid #f6f6f6;}
+	.fc-ltr .fc-basic-view .fc-day-number {background: #f6f6f6;}
+.baner_main {margin: 0 0 18px; border: solid 1px #ccc; height: 105px; position: relative;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;}
+	.baner_main--close {position: absolute; top: 7px; right: 9px; width: 15px; height: 16px; background: url(../img/close_popap.png) 0 0 no-repeat;}
+	.baner_main--close:hover {opacity: 0.7;}
+	.baner_main--btn {float: right; padding: 36px 31px 0 26px;}
+	.baner_main--pay {float: right; color: #fff; padding: 5px 27px 0 0; font: normal 400 18px/39px 'Fregat';}
+		.baner_main--pay_h {text-transform: uppercase; font-weight: bold;}
+		.baner_main--pay_n {position: relative; text-transform: uppercase;}
+			.baner_main--pay_n span {font-size: 60px; font-weight: bold;}
+			.baner_main--pay_n strong {font-size: 24px; position: absolute; left: -19px; font-weight: normal; line-height: 60px;}
+		.baner_main--header {font: normal 700 30px/36px 'Fregat'; text-transform: uppercase; float: left; padding: 16px 15px 0 35px; color: #fff;}
+		.baner_main--ico {float: left; padding: 14px 0 0;}
+			.baner_main--ico p {margin: 0 0 7px;}
+				.baner_main--ico p img {vertical-align: top;}
+.bis_row {margin: 0 -12px;}
+	.bis_col {padding: 0 12px; margin: 0 0 24px;} 
+		.bis_col--h {background: #333; height: 38px; position: relative; text-align: center; padding: 0 0 0 26px; font: normal 700 12px/38px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em; color: #fff;}
+			.bis_col--h .h_ico {position: absolute; top: 7px; left: 11px;}
+	.bis_col--cont {border: 1px solid #ccc; background: #f4f4f4; padding: 13px 15px 5px; font: normal 400 12px/15px 'Droid Sans';}
+		.bis_col--act {border: solid 2px #267805; width: 109px; height: 30px; background-color: #f4f4f4; text-align: center; color: #267805; letter-spacing: 0.2em; font: normal 700 9px/26px 'Fregat'; text-transform: uppercase; margin: 0 auto 19px;
+			-webkit-border-radius: 13px 12px 12px 13px/13px;
+			-moz-border-radius: 13px 12px 12px 13px/13px;
+			border-radius: 13px 12px 12px 13px/13px;}
+		.bis_col--act_sub {border-color: #ff8e00; color: #ff8e00;}
+		.bis_col--act_pend {border-color: #999; color: #999;}
+		.bis_col--cont p {margin: 0 0 5px;}
+.address_act {position: relative; border: 1px solid #ff3600; padding: 17px 35px 10px 32px; font: normal 400 12px 'Droid Sans'; margin: 0 0 23px;}
+	.address_act--ico {position: absolute; top: 18px; left: -20px; background-size: #fff; text-align: center; width: 40px; padding: 6px 0;}
+	.address_act--h {color: #ff2a00; font-size: 18px; margin: 0 0 26px; text-transform: uppercase;}
+	.address_act--cont {}
+		.address_act--cont strong {font-size: 15px;}
+		.address_act--cont span {display: inline-block; padding-left: 23px; font-size: 12px;}
+		.address_act--cont a {color: #333; text-decoration: underline;}
+		.address_act--cont a:hover {text-decoration: none;}
+	.mar_pagin {margin-bottom: 10px;}
+	.address_act-form_h {margin: 15px 0 17px; text-transform: uppercase; font: normal 400 12px 'Droid Sans';}
+	.address_act .form_item--h {font-weight: bold; padding-top: 8px; font-size: 14px;}
+	
+	.form_phone-code {float: left; padding: 0 7px; position: relative; width: 70px;}
+		.phon_cod_l {position: absolute; left: 0; top: 6px; font: normal 400 14px/20px 'Fregat';}
+		.phon_cod_r {position: absolute; right: 0; top: 6px; font: normal 400 14px/20px 'Fregat';} 
+		.form_phone-namber {margin: 0 0 0 143px;}
+	.address_act .form_radio {text-align: left;}
+	.address_act .textarea_st {height: 70px; margin-bottom: 17px;}
+	.bis_col-tome {font-size: 12px; text-align: center; margin: 0 0 7px;}
+		.bis_col-tome strong {font-size: 18px;}
+	.bis_col--time_setting {margin: 0 auto 6px; width: 85px; padding-left: 22px; position: relative; font-size: 12px;}
+		.btn_add {position: absolute; top: -2px; left: 0; width: 15px; height: 16px; background: url(../img/ico_plus_w.png) 0 0 no-repeat;}
+		.btn_add:hover {opacity: 0.8;}
+.invoice_head {}
+	.invoice_head--l {float: left; padding: 0 0 0 20px; margin: 0 0 13px;}
+		.invoice_head--l p {margin: 0 0 5px; color: #999;}
+			.invoice_head--l p strong {color: #333;}
+		.lnk_print {position: relative; display: inline-block; margin: 5px 0 0 26px; font-size: 12px; color: #333; text-decoration: underline;}
+		.lnk_print:hover {text-decoration: none;}
+			.lnk_print:before {content: ' '; position: absolute; top: 0px; left: -26px; width: 19px; height: 18px; background:url(../img/print.png) 0 0 no-repeat;}
+	.invoice_head--r {float: right; padding: 0; margin: 0 10px 13px 0;}
+.invoice_block {position: relative; margin: 0 -15px 16px;}
+	.invoice_block:before {position: absolute; content: ' '; top: 50%; left: 40%; width: 20%; border-top: 1px solid #ccc; z-index: 1;}
+	.invoice_block .col-sm-6 {position: relative; z-index: 2;} 
+		.invoice_block--in {border: 1px solid #ccc; position: relative; background: #f4f4f4; min-height: 88px; padding: 13px 10px 10px 20px;}
+			.invoice_block p {margin: 0 0 5px; font-size: 15px; line-height: 18px;}
+		.size_15 {font-size: 15px;}
+		.td_namber {width: 44px;}
+		.text-left {text-align: left !important;}
+	.table_st-total {width: 420px; border-bottom: 0;}
+		.table_st-total td {padding: 15px 0;}
+		.td_pay {width: 210px;}
+		.table_st-total .text-left {width: 207px; padding-left: 22px; border-right: 1px solid #ccc;}
+		.table_st-total td {background: #f4f4f4 !important; border-bottom: 1px solid #ccc;}
+		.table_st-total td.td_bg {background: #ff8c00 !important; color: #fff; font-size: 18px; letter-spacing: 0.2em;}
+.office_hours .btn {float: right; margin: 4px 21px 0 0;}
+	.office_hours--h {display: inline-block; font-size: 15px; font-weight: bold; vertical-align: top; line-height: 20px; padding-top: 7px;} 
+	.office_hours--setting {display: inline-block; vertical-align: top; line-height: 20px;}
+	.office_hours--hts {display: inline-block; vertical-align: top; font-size: 12px; line-height: 20px; width: 72px; padding-top: 7px; padding-left: 10px;} 
+		.office_hours--hts strong {font-size: 18px;}
+		.office_hours--setting .bis_col--time_setting {width: auto; line-height: 15px;}
+.panel_office {padding: 17px 16px 8px 22px}
+.form_item--date .form_item--h {width: 44px;}
+.form_item--date .form_item--inp {margin-left: 44px;}
+.form_item--attendees .form_item--h {width: 100px; padding-top: 0; margin-top: -3px;}
+.form_item--attendees .form_item--inp {margin-left: 100px;}
+.panel-office {margin: 0 0 18px; padding: 18px 35px 15px 22px;}
+.car_box {margin: 0 0 10px;}
+	.car_box--item {border: 1px solid #ccc; position: relative; padding: 26px 25px 22px;}
+		.car_box--ico {position: absolute; top: 22px; left: -20px; width: 40px; text-align: center;}
+			.car_box--ico img {padding: 5px 0; background: #fff;}
+		.car_box--h {font-size: 15px; line-height: 18px; font-weight: bold; min-height: 32px; margin: 0 0 14px; text-align: center;}
+		.car_box--inp {font-size: 12px; line-height: 14px; min-height: 42px; margin: 0 0 4px;}
+	.car_box--btn {text-align: center;}
+		.car_box--btn .btn {display: inline-block; background: #339900; font-size: 10px; padding: 0 30px;}
+
+.header_big {font: normal 700 30px/34px 'Fregat'; margin: 35px 0 5px; text-transform: uppercase;}
+
+.sub_head {font-size: 0; background: #363941; text-align: center; padding: 21px 0 15px 8px; font: normal 700 0/15px 'Fregat'; color: #fff; margin: 0 0 35px;}
+	.sub_head div {font-size: 12px; display: inline-block;}
+	.sub_1 {width: 22%;}
+	.sub_2 {width: 12%;}
+	.sub_3 {width: 12%;}
+	.sub_4 {width: 12%;}
+	.sub_5 {width: 12%;}
+	.sub_6 {width: 12%;}
+	.sub_7 {width: 15%; padding-right: 10px;}
+.sub_table {font-size: 0; border: 1px solid #ccc; margin: 0 0 12px 19px; position: relative; text-align: center;} 
+	.sub_ico {position: absolute; top: 50%; left: -20px; margin-top: -20px; text-align: center; width: 40px;}
+		.sub_ico img {padding: 3px 0; background: #fff;}
+	.sub_table .sub_1 {display: table-cell; vertical-align: middle; height: 66px; text-align: left; padding-left: 39px;  font: normal 700 15px/18px 'Droid Sans';}
+	.sub_table .sub_2 {display: table-cell; vertical-align: middle; height: 66px; font: normal 700 12px/15px 'Fregat'; letter-spacing: 0.2em; text-transform: uppercase;}
+		.sub_table .sub_2 span {color: #ff8e00;}
+	.sub_table .sub_3 {display: table-cell; vertical-align: middle; height: 66px; font: normal 400 12px/15px 'Fregat';}
+	.sub_table .sub_4, .sub_table .sub_5 {display: table-cell; vertical-align: middle; height: 66px; font: normal 400 12px/15px 'Fregat';}
+	.sub_table .sub_6 {display: table-cell; vertical-align: middle; height: 66px; font: normal 400 12px/15px 'Fregat'; color: #999;}
+	.sub_table .sub_7 {display: table-cell; vertical-align: middle; height: 66px; padding-right: 20px;}
+		.sub_table .sub_7 .btn {height: 28px; line-height: 28px; padding: 0 20px;}
+	.sub_border {border-top: 2px solid #dadada; height: 0; width: 180px; margin: 25px auto;}
+.header_ico {font: normal 700 12px/15px 'Fregat'; letter-spacing: 0.2em; margin: 0 0 8px; text-transform: uppercase;}
+	.header_ico img {margin-right: 5px; margin-top: -2px;}
+.color_gray {color: #999 !important;}
+.ticket_header {margin: 0 0 27px; font-size: 12px;}
+	.ticket_header strong {font: normal 700 12px/15px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em;}
+	.ticket_header span {font-style: normal; display: inline-block; padding-left: 15px;}
+.ticket_mes {overflow: hidden;margin: 0 0 25px;display: table-row-group;}
+	.ticket_autor {font-size: 12px;line-height: 16px;padding: 0 26px 0 0;display: table-cell;vertical-align: bottom;position: relative;bottom: -4px;}
+		.ticket_autor span {color: #999;}
+	.ticket_message_box {overflow: hidden;padding: 0 0 0 20px;/* display: table-cell; */}
+		.ticket_message {border: solid 1px #ff8e00; position: relative; padding: 26px 20px 28px 23px; font-size: 12px;
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			border-radius: 20px;}
+			.ticket_message:before {content: ' '; position: absolute; bottom: -1px; left: -17px; background: url(../img/mes_bord.png) 0 0 no-repeat; width: 47px; height: 23px;}
+.ticket_mes-cont {overflow: hidden; padding: 0 0 25px;}
+.ticket_mes__right .ticket_autor {padding: 0 0 0 26px;}
+.ticket_mes__right .ticket_message_box {padding: 0 20px 0 0;}
+.ticket_mes__right .ticket_message {border-color: #ccc;}
+	.ticket_mes__right .ticket_message:before {background: url(../img/mes_bord_r.png) 0 0 no-repeat; left: auto; right: -17px;}
+.form_item--message .form_item--h {width: 80px;}
+.form_item--message .form_item--inp {margin: 0 0 0 80px;}
+.form_item--message .textarea_st {height: 80px;}
+.inp_cvc {width: 113px;}
+.panel-pad_b {padding-bottom: 2px; margin-bottom: 20px;}
+.panel-min-pad {padding-right: 25px; padding-top: 33px;}
+	.panel-min-pad .form_item--h {font-weight: bold;}
+.baner_main_black .baner_main--header, .baner_main_black .baner_main--pay {color: #333;} 
+.baner_main--header img {margin: 0 0 0 3px; vertical-align: top;}
+
+.modal_orange {}
+	.modal_orange .modal-header {background: #ff8e00; padding: 0 20px 0 23px;}
+	.modal_orange .modal-body {background: #f4f4f4; padding: 16px 23px 0 22px;}
+	.modal_orange .form_btn {margin-bottom: 16px;}
+	.modal-h_ico {display: table-cell; vertical-align: middle; height: 42px; padding: 0 15px 0 0;}
+	.modal-h_ver {display: table-cell; vertical-align: middle; height: 42px; padding-top: 2px;}
+	.popup_btn {float: right; padding: 3px 0 0 24px;}
+	.form_popap .form_item--h {width: auto; font-weight: bold; padding-right: 16px;}
+	.form_popap .form_item--inp {margin: 0; overflow: hidden;}
+.form_item--h {font-weight: bold;}
+.form_popap .form_item--inp span {display: inline-block; padding-top: 7px;}

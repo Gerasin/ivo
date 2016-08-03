@@ -1,0 +1,596 @@
+@import url('normalize.css');
+@import url('bootstrap.css');
+@import url('bootstrap-theme.css');
+@import url('../fonts/droidsans-1/droidsans.css');
+@import url('../fonts/fontin/fontin.css');
+@import url('../fonts/fregat-1/fregat.css');
+
+@import url('fullcalendar.css');
+
+
+
+
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+.page_text p {font: normal 400 15px/24px 'Droid Sans'; margin: 0 0 24px;}
+	.page_text h1 {font: normal 700 28px/34px 'Fregat'; margin: 0 0 16px; text-transform: uppercase; letter-spacing: 0.2em;}
+	.page_text h2 {font: normal 700 24px/28px 'Fregat'; margin: 0 0 16px; text-transform: uppercase; letter-spacing: 0.2em;}
+	.page_text h3 {font: normal 400 24px/28px 'Fregat'; margin: 0 0 16px;}
+	.page_text h4 {font: normal 700 12px/17px 'Fregat'; margin: 0 0 16px; text-transform: uppercase;}
+	.page_text ol {padding-left: 0; list-style-type: none; counter-reset: num;}
+	.page_text ol li {position: relative; padding-left: 20px;}
+	.page_text ol li:before {color: #ff8e00; content: counter(num) '. '; counter-increment: num; position: absolute; left: -8px; width: 20px; text-align: right;}
+	.page_inner h2, .page_inner h2, .page_inner h3, .page_inner h4, .page_text small {color: #ff8e00;}
+
+
+
+.btn {height: 26px; font: normal 700 12px/26px 'Fregat'; text-decoration: none; color: #fff !important; letter-spacing: 0.2em; text-transform: uppercase; padding: 0 23px;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	background-color: #ccc;}
+.btn:hover {color: #fff; opacity: 0.8;} 
+	.btn img {margin-right: 8px; vertical-align: middle; margin-top: -3px;}
+.btn.btn-green {background: #1b8339;}
+.btn-orange {background: #f38000;}
+.new_client {padding: 0 9px;}
+.container {min-width: 1170px; width: auto !important;}
+.inp_st {border: 1px solid #ccc; height: 31px; padding: 0 0 0 10px; font: normal 400 12px/30px 'Droid Sans'; width: 100%;}
+.sel_st {border: 1px solid #ccc; height: 31px; padding: 0 0 0 7px; font: normal 400 12px/30px 'Droid Sans'; width: 100%;}
+.textarea_st {border: 1px solid #ccc; height: 214px; padding: 0 0 0 10px; font: normal 400 12px/30px 'Droid Sans'; width: 100%; resize: none;}
+.select_st {border: 1px solid #ccc; height: 31px; padding: 0 0 0 7px; font: normal 400 12px/30px 'Droid Sans'; width: 100%;}
+.admin_page {padding-left: 33px;}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {height: 100%;}
+body {font: 400 15px/1.3em 'Droid Sans'; color: #333; min-width: 1200px; position: relative; min-height: 100%;}
+
+
+.head {height: 63px; background: #333; padding: 0;}
+	.logo {padding: 10px 0 0; float: left;}
+		.logo img {height: 40px;}
+	.autorize_info {float: right; border: 1px solid #fff; height: 30px; margin: 15px 0 0; font: normal 700 12px/30px 'Fregat'; letter-spacing: 0.2em; color: #fff; text-transform: uppercase;
+		-webkit-border-radius: 13px;
+		-moz-border-radius: 13px;
+		border-radius: 13px;}
+		.autorize_name {float: left; padding: 0 15px 0 30px; height: 30px;}
+		.logout {float: left; border-left: 1px solid #cfcfcf; height: 30px; padding: 0 20px 0 37px; position: relative;}
+			.logout a {color: #fff; text-decoration: none;}
+			.logout img {position: absolute; top: 7px; left: 14px;}
+.content_head {background: #e5e5e5; border-bottom: 1px solid #bfbfbf; box-shadow: 1px 0 0 1px #f2f2f2; margin: 0 0 16px;}
+	.crubs {margin: 15px 0 16px;text-transform: uppercase;font: normal 400 11px/14px 'Droid Sans';color: #ff8e00;}
+		.crubs a {color: #333; text-decoration: none;}
+		.crubs a:hover {text-decoration: underline;}
+		.crubs span {padding: 0 24px;}
+	.search {margin: 0 0 13px;}
+		.search--btn {float: right;}
+	.search--form {margin: 0 171px 0 0;}
+		.search--form .btn {float: right; margin: 0 0 0 5px;}
+	.search--input {position: relative; overflow: hidden; top: -2px;}
+		.search--input input {border: 1px solid #ccc; height: 31px; padding: 0 0 0 36px; font: normal 400 12px/30px 'Droid Sans'; width: 100%;}
+		.search--input:before {position: absolute; content: ' '; top: 9px; left: 7px; width: 15px; height: 14px; background: url(../img/search_ico.png) 0 0 no-repeat;}
+.border_hor {height: 2px; background: #bfbfbf; border-bottom: 1px solid #f2f2f2; font-size: 0;}
+.accaunt_status--info {float: left; width: 268px; border-right: 1px solid #bfbfbf; text-transform: uppercase; position: relative; height: 67px; padding: 27px 32px 0 0; font: normal 700 12px/16px 'Open Sans', sans-serif;}
+.accaunt_status--info:before {position: absolute; content: ' '; top: 0; bottom: 0; right: -2px; width: 1px; background: #f2f2f2;} 
+ 	.accaunt_status--info .btn {float: right; margin: -7px 0 0;}
+.accaunt_status--form {margin: 0 0 0 295px; padding: 8px 0 0;}
+	.accaunt_status--form span {display: inline-block;float: left;padding: 19px 0 0;font: normal 700 12px/16px 'Open Sans', sans-serif;text-transform: uppercase;}
+	.accaunt_status--form .btn {float: right; margin: 13px 0 0 5px;}
+	.accaunt_status--text {padding: 0 0 0 28px; overflow: hidden;}
+		.accaunt_status--text textarea {width: 100%; height: 51px; padding: 8px 0 0 15px; font: normal 400 12px/16px 'Droid Sans'; border: 1px solid #ccc; resize: none;}
+.row-posit {position: relative; padding: 12px 0 10px;}
+	.row-posit .col-sm-4 {position: initial; padding: 0 25px;}	
+	.col-border {position: absolute; top: 0; bottom: 0; margin: 0 0 0 -25px; width: 2px; background: #bfbfbf; border-right: 1px solid #f2f2f2;}
+.header {margin: 0 0 14px;text-transform: uppercase;font: normal 700 12px/16px 'Droid Sans'; color: #666;}
+.info_table {width: 100%;}
+	.info_table th {width: 150px; vertical-align: top; font: normal 600 12px/24px 'Open Sans', sans-serif; text-transform: uppercase; padding-right: 10px;}
+	.info_table td {vertical-align: top; font: normal 600 12px/24px 'Open Sans', sans-serif; color: #666;}
+	.edit_lnk {float: right;}
+		.edit_lnk a {font: normal 400 12px/16px 'Open Sans', sans-serif; text-decoration: none; color: #3366cc;}
+		.edit_lnk a:hover {text-decoration: underline;}
+	.edit_txt {margin-left: 10px; font: normal 400 12px/16px 'Open Sans', sans-serif;}
+.cont_h {margin: 0 0 11px; font: normal 700 12px/16px 'Open Sans', sans-serif; text-transform: uppercase;}
+.table_st {width: 100%; border: 1px solid #ccc; margin: 0 0 35px;}
+	.table_st th {background: #999; padding: 11px 5px 13px; text-align: center; color: #fff; font: normal 700 12px/16px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em;}
+	.table_st td {text-align: center; padding: 7px 0 9px; font-size: 12px; line-height: 17px;}
+		.table_st td .btn {padding: 0 13px;}
+		.table_st td strong {font-family: 'Fregat'; font-weight: bold;}
+	.td_btn {margin: -7px -10px -8px;height: 26px; width: 226px;}
+		.td_btn .btn {margin: 0 0 0 2px; display: inline-block;}
+	.table_st tr:nth-child(2n+1) td {background: #e5e1e1;}
+.btn_lnk {line-height: 24px; margin: 0 0 0 23px; display: inline-block; position: relative; top: 2px;}
+.col_green {color: #1b8339 !important;}
+.col_red {color: #f56a3f !important;}
+.row_sort {padding: 10px 0 15px; position: relative;}
+	.row_sort .col-border {margin-left: -15px;}
+	.row_sort .col-sm-8 {position: initial;}
+label {font-weight: normal; cursor: pointer;}
+input[type='checkbox'] {position: absolute; left: -10000px;}
+input[type='checkbox'] + label {padding-left: 26px; position: relative;}
+input[type='checkbox'] + label:before {position: absolute; left: 0; top: -2px; content: ' '; width: 18px; height: 18px; background: url(../img/check.png) 0 -25px no-repeat;}
+input[type='checkbox']:checked + label:before {background-position: 0 0;}
+
+input[type='radio'] {position: absolute; left: -10000px;}
+input[type='radio'] + label {padding-left: 19px; position: relative; margin-right: 20px;}
+input[type='radio'] + label:before {position: absolute; left: 0; top: 3px; content: ' '; width: 12px; height: 12px; background: url(../img/radio.png) 0 -12px no-repeat;}
+input[type='radio']:checked + label:before {background-position: 0 0;}
+.check_st {color: #666; font: normal 600 12px/16px 'Open Sans', sans-serif; margin: 0 0 10px;}
+.close_ln {display: inline-block; background: url(../img/close_ln.png) 0 0 no-repeat; width: 15px; height: 16px; margin: 2px 10px -2px 0;}
+.modal-header {position: relative; color: #fff; font: normal 700 12px/16px 'Fregat'; letter-spacing: 0.2em; text-transform: uppercase; padding: 13px 30px 11px 34px; background: #999;}
+	.modal-header .close {position: absolute; top: -1px; opacity: 1; right: -22px; width: 15px; height: 16px; font-size: 0; background: url(../img/close_popap.png) 0 0 no-repeat;}
+	.modal-header .close:hover {opacity: 0.8;}
+.modal-body {background: #fff; border: 1px solid #ccc; border-top: 0; padding: 34px 18px 37px 34px;}
+	.modal--btn {float: right;}
+		.modal--btn a {margin: 0 10px 0 0;}
+	.modal--message {padding: 6px 30px 0 0; font-size: 12px;}
+.modal-backdrop {background: #fff;}
+body * {outline: none !important;}
+.form_item {overflow: hidden; margin: 0 0 16px;}
+	.form_item--h {float: left; width: 105px; padding: 7px 0 0;}
+	.form_item--h_two {padding-top: 0; margin-top: -3px; margin-bottom: -7px;}
+	.form_item--inp {margin: 0 0 0 105px;}
+.form_padding {padding-right: 90px;}
+.border_hor--marg {margin-bottom: 38px;}
+	.client_info {margin: 26px auto 43px; background: #fff; border: 1px solid #333; width: 93px; height: 37px; text-align: center; font: normal 600 24px/35px 'Open Sans', sans-serif;}
+.total_revenue {width: 350px; border: 1px solid #ccc;}
+	.total_revenue tr:nth-child(2n) {background: #e5e1e1;}
+	.total_revenue th {font-size: 12px; line-height: 16px; font-weight: normal; padding: 8px 0 7px 25px; vertical-align: top; text-align: left;}
+	.total_revenue td {width: 93px; padding: 9px 15px 7px 0; vertical-align: top; font: normal 700 12px/16px 'Fregat'; letter-spacing: 0.2em;}
+.status {height: 30px; background-color: #fff; border: solid 2px #267805; padding: 0 30px; letter-spacing: 0.2em; color: #267805; font: normal 700 10px/27px 'Fregat'; text-transform: uppercase; display: inline-block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px; }
+.cont_bold {font-size: 12px; font-weight: bold; line-height: 18px; text-transform: uppercase;}
+	.cont_bold span {font-weight: normal;}
+.panel-primary {border-color: #ccc; border-top: 0;}
+.panel-primary > .panel-heading {background: #999; padding: 14px 40px 14px 14px; position: relative; border-radius: 0;}
+	.panel-primary > .panel-heading h3 {font: normal 700 15px/16px 'Fregat'; text-transform: uppercase; letter-spacing: 0.2em;}
+.panel {border-radius: 0px; background: #f4f4f4; margin: 0;}
+.panel-icon {position: absolute; top: 12px; right: 13px; }
+.panel-body {padding: 20px 12px 11px;}
+.recieved {overflow: hidden; margin: 0 0 20px;}
+	.recieved-ico {float: left; padding: 0; width: 55px;}
+	.recieved-txt {overflow: hidden;text-transform: uppercase;font-size: 12px;line-height: 14px;height: 30px;padding: 1px 0 0;display: table-cell;vertical-align: middle;}
+		.recieved-txt strong a {color: #333; text-decoration: none;}
+		.recieved-txt strong a:hover {text-decoration: underline;}
+		.recieved-txt strong {display: inline-block; margin: 0 10px 0 0;}
+		.recieved-txt small {text-transform: lowercase; font-size: 12px; display: inline-block;}
+	.panel-body .table_st {margin: 0 0 11px;}
+.recieved .header {margin: 0 0 2px; color: #333;}
+.listing {text-align: right; font-size: 11px;}
+	.listing a, .listing span {display: inline-block; margin: 0 4px; color: #333;}
+	.listing a {text-decoration: underline;}
+	.listing a:hover {text-decoration: none;}
+	.panel .table_st th {padding: 7px 5px 7px;}
+	.panel .status {float: right; margin: -7px 0 0 5px; padding: 0 20px;}
+	.status-red {background: #ff2400; border-color: #fff; color: #fff;}
+.panel-body .header {margin-bottom: 2px; letter-spacing: 0.2em;}
+.agree {position: relative; padding: 0 0 12px 27px;}
+	.agree:before {position: absolute; content: ' '; top: 3px; left: 2px; width: 12px; height: 12px; background: url(../img/agree.png) 0 0 no-repeat;}
+.panel-body table strong {color: #999;}
+.voice {border: 1px solid #ccc; background: #fff; padding: 16px 10px 10px 21px;}
+	.voice--item {margin: 0 0 7px; font-size: 11px;}
+		.voice--item strong {font-size: 15px;}
+		.voice--item small {font-size: 100%; text-transform: uppercase;}
+		.voice--item img {margin-left: 6px; position: relative; top: -2px;}
+.form_press {line-height: 19px; margin-bottom: 19px; vertical-align: top;}
+.form_press .inp_st {width: 72px; vertical-align: top;}
+.form_press strong {display: inline-block; padding-top: 8px; padding-right: 3px; vertical-align: top;}
+.form_press--cent {text-align: center;}
+.form_press--cent strong {padding-top: 0;}
+.form_radio {margin: 0 0 10px; text-align: center; font-size: 13px;}
+	.form_radio span {font-size: 11px;}
+.form_btn {margin: 0 0 12px; overflow: hidden;}
+	.form_btn .btn {float: right; margin-left: 10px;}
+.panel-marg {margin: 0 0 13px;}
+.app-btn {letter-spacing: 0.01em; padding: 0 11px; margin-left: 5px; float: right; position: relative; top: -8px;}
+.recieved-txt-w {width: 478px; padding-top: 10px;}
+.pach {margin: 0 0 10px;}
+	.pach--item {display: inline-block;margin: 0 0 10px;height: 43px;border: 1px solid #ccc;background: #fff;line-height: 41px;color: #999;font-size: 12px;padding: 0 10px 0 16px;margin: 0 7px 10px 0;}
+		.pach--close {display: inline-block;width: 16px;height: 16px;background: url(../img/close_ln.png) 0 0 no-repeat;position: relative;top: 4px;margin-left: 5px;}
+	.pach--item.active {background: #999; color: #fff;}
+		.pach--item.active .pach--close {background: url(../img/close_popap.png) 0 0 no-repeat;}
+.pach--add {display: inline-block;background: url(../img/ico_plus_w.png) 0 0 no-repeat;width: 15px;height: 16px;margin: 0 0 0 5px;vertical-align: top;margin-top: 13px;}
+.patch_form {background: #fff; border: 1px solid #999; padding: 13px 10px 10px 22px;}
+	.patch_form h4 {font-size: 15px; margin: 0 0 15px; font-weight: bold;}
+.patch_form_in {text-align: center;}
+.panel-textarea {margin: 0 0 8px;}
+.panel-primary > .panel-heading {border: 0;}
+	.filter .header {text-align: center; margin: 0 0 20px; color: #666;}
+	.col_filt {display: inline-block; vertical-align: top; font: normal 600 12px/16px 'Open Sans', sans-serif; margin: 0 0 6px;}
+	.filter .row {font-size: 0;}
+.filt_act {color: #006633;}
+.filt_pend {color: #cccc66;}
+.filt_didn {color: #ff9999;}
+.filt_susp {color: #999;}
+.filt_not_act {color: #ccc;}
+.filt_act {color: #006633;}
+.textarea_namber {height: 61px;}
+.select_action {height: 35px;}
+	.select_action select {width: 100%; font-size: 12px; height: 25px; line-height: 25px; border-color: #ccc; color: #333;}
+.filter_btn {text-align: right;}
+	.filter_btn .btn {display: inline-block;}
+	.filter_tab {text-align: center; margin: 7px 0 7px;}
+		.filter_tab a {display: inline-block; width: 18%; margin: 0 1% 0 0; border: 1px solid #ccc; height: 31px; line-height: 29px; text-align: center; color: #666; text-decoration: none;}
+		.filter_tab a:hover {background: #f38000; color: #fff;}
+		.filter_tab a.active {background: #f38000; border-color: #f38000; color: #fff;}
+.room_time {white-space: nowrap; font: normal 700 12px/16px 'Open Sans', sans-serif; text-transform: uppercase; padding: 13px 0 10px; color: #666;}
+	.room_time .btn, .room_time .status {top: -2px; position: relative; margin-left: 16px;}
+.popup_form--item {margin: 0 0 9px; position: relative;}
+	.popup_form--item:after {display: block; clear: both; content: ' ';}
+	.popup_form--h {font: normal 700 14px/16px 'Droid Sans'; padding-top: 4px; width: 173px; float: left;}
+	.popup_form--inp {font: normal 400 12px/16px 'Droid Sans'; margin: 0 0 0 173px; min-height: 31px;}
+		.popup_form--inp span {display: inline-block; padding-top: 5px;}
+	.inp_st_50 {width: 131px;}
+	.popup_form--btn {overflow: hidden;}
+		.popup_form--btn .btn {float: right; margin: 0 0 0 5px;}
+.modal-calendar {width: 500px;}
+	.modal-calendar .modal-body {padding-bottom: 14px;}
+
+.menu_left {position: absolute; top: 62px; bottom: 0; background: #363941; padding: 55px 0 0 0; z-index: 90; min-height: 670px;}
+	.menu_left ul {padding: 0; margin: 0;}
+		.menu_left li {list-style: normal; margin: 0 0 2px;}
+			.menu_left li a {display: block; text-transform: uppercase; letter-spacing: 0.2em; padding: 11px 33px 12px 65px; font: normal 700 12px/15px 'Fregat'; text-decoration: none; color: #fff; position: relative;}
+				.menu_left li span {position: absolute; top: 50%; left: 28px; margin-top: -9px; display: table-cell; width: 22px; height: 20px; text-align: center; vertical-align: middle;}
+			.menu_left li a:hover, .menu_left li a.active {background: #5c616f;}
+.menu_left li a {padding: 11px 0 12px 33px; font-size: 0; display: inline-block; min-height: 38px;
+	-webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;}
+.menu_left:hover li a {padding: 11px 33px 12px 65px; font-size: 12px;}
+.menu_left li a span {left: 5px; font-size: 12px;
+	-webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;}
+.menu_left:hover li a span {left: 28px; font-size: 12px;}
+
+.dashboard {font-size: 0; margin: -15px -15px 0 -15px; position: relative; overflow: hidden;}
+.dashboard-i {display: inline-block; width: 6.6666%; height: 50px; background: #99cc99; border: 1px solid #ccc; vertical-align: top;
+	border-right-color: #99b299;
+	border-bottom-color: #e5e5e5;
+	border-left-color: #fff; }
+.dashboard-yellow {background-color: #ffffcc;} 
+.dashboard-red {background-color: #ff9999;} 
+.dashboard-gray {background-color: #d6dad6;} 
+.dashboard-gray2 {background-color: #999999;} 
+	.dashboard--namber {padding: 26px 0 0 8px; font: normal 600 14px/18px 'Open Sans', sans-serif; cursor: pointer; height: 50px;}
+.dashboard-check {position: relative;}
+	.dashboard-check:before {content: ' '; position: absolute; top: 0; right: 0; background: url(../img/dashboard-check.png) 0 0 no-repeat; width: 25px; height: 25px;}
+.dashboard-i.active {position: relative;
+	-webkit-box-shadow: inset 2px 2px 2px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    inset 2px 2px 2px 0px rgba(50, 50, 50, 0.4);
+	box-shadow:         inset 2px 2px 2px 0px rgba(50, 50, 50, 0.4);}
+	.dashboard-i.active:after {position: absolute; content: ' '; top: 0; left: 100%;
+		border-top: 25px solid transparent;
+		border-left: 10px solid #99cc99;
+		border-bottom: 25px solid transparent;}
+	.dashboard-yellow.active:after {
+		border-top: 25px solid transparent;
+		border-left: 10px solid #ffffcc;
+		border-bottom: 25px solid transparent;}
+	.dashboard-red.active:after {
+		border-top: 25px solid transparent;
+		border-left: 10px solid #ff9999;
+		border-bottom: 25px solid transparent;}
+	.dashboard-gray.active:after {
+		border-top: 25px solid transparent;
+		border-left: 10px solid #d6dad6;
+		border-bottom: 25px solid transparent;}
+	.dashboard-gray2.active:after {
+		border-top: 25px solid transparent;
+		border-left: 10px solid #999999;
+		border-bottom: 25px solid transparent;}
+.dashboard--info {position: absolute; top: 0; bottom: 0; display: none; min-height: 280px; background: #fff; width: 515%; padding: 20px 28px 10px 30px; margin-left: 100%;}
+.active_l .dashboard--info {margin-left: 0; margin-right: 100%; right: 0;}
+.dashboard--cont {margin: 0 0 20px; font: normal 400 11px/14px 'Open Sans', sans-serif;}
+.dashboard--cont_gray {color: #999;}
+	.dashboard--cont h3 {font-size: 12px; font-weight: bold; text-transform: uppercase; margin: 0 0 10px;}
+	.dashboard--cont h4 {font-size: 11px; text-transform: uppercase; margin: 0 0 5px;}
+	.dashboard--cont p {font-size: 11px;  margin: 0 0 5px;}
+	.dashboard--cont strong {padding-right: 10px;}
+	.dashboard--lnk {float: right; font-size: 12px; margin-top: -2px;}
+
+.dashboard-i.active_l {position: relative;
+	-webkit-box-shadow: inset -2px 2px 2px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    inset -2px 2px 2px 0px rgba(50, 50, 50, 0.4);
+	box-shadow:         inset -2px 2px 2px 0px rgba(50, 50, 50, 0.4);}
+	.dashboard-i.active_l:after {left: auto; right: 100%;
+		border-top: 25px solid transparent;
+		border-left: 0;
+		border-right: 10px solid #99cc99;
+		border-bottom: 25px solid transparent;}
+	.dashboard-yellow.active_l:after {
+		border-top: 25px solid transparent;
+		border-left: 0;
+		border-right: 10px solid #ffffcc;
+		border-bottom: 25px solid transparent;}
+	.dashboard-red.active_l:after {
+		border-top: 25px solid transparent;
+		border-left: 0;
+		border-right: 10px solid #ff9999;
+		border-bottom: 25px solid transparent;}
+	.dashboard-gray.active_l:after {
+		border-top: 25px solid transparent;
+		border-left: 0;
+		border-right: 10px solid #d6dad6;
+		border-bottom: 25px solid transparent;}
+	.dashboard-gray2.active_l:after {
+		border-top: 25px solid transparent;
+		border-left: 0;
+		border-right: 10px solid #999999;
+		border-bottom: 25px solid transparent;}
+
+
+
+@media (max-width: 990px) {
+	
+}
+
+@media (max-width: 767px) {
+	
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
